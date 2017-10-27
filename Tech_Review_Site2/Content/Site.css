@@ -23,3 +23,12 @@ select,
 textarea {
     max-width: 280px;
 }
+.homeH1{
+    color:white;
+    text-align:center;
+}
+.underlineText{
+    text-align:center;
+    text-decoration:underline;
+    color:white;
+}
