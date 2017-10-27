@@ -1,0 +1,66 @@
+﻿@model Tech_Review_Site2.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsoleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsoleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CpuSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CpuSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MainRam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainRam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasMemoryOption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasMemoryOption)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
