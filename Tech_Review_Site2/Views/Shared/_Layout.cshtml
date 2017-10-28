@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    @*Added Google Font Link*@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*Added personalized title*@
     <title>@ViewBag.Title - B. Tome's ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -21,9 +23,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    @*What User Sees; Desired Site; Controller Name*@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Reviews", "Index", "Reviews")</li>
-                    <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
+                    <li>@Html.ActionLink("Console Creators", "Index", "Categories")</li>
                 </ul>
             </div>
         </div>

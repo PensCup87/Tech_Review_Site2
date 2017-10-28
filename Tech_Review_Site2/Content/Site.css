@@ -24,12 +24,25 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Landing page styling*/
 .homeH1{
     color:white;
     text-align:center;
 }
+/*More landing page styling*/
 .underlineText{
     text-align:center;
     text-decoration:underline;
     color:white;
 }
+/*Kept jumbotron, added a picture and height*/
+.jumbotron {
+    background-image: url('Pics/videoGames.jpg');
+    background-size:cover;
+    height: 350px;
+}
+/*Placed border around completed reivew boxes*/
+.thumbnail{
+    border-color:black;
+}
+
