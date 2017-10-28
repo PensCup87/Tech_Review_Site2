@@ -9,8 +9,15 @@
 <div>
     <h4>Review</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
+    <h3>@Html.DisplayNameFor(model => model.Category.CategoryName): @Html.DisplayFor(model => model.Category.CategoryName)</h3>
+    <h3>@Html.DisplayNameFor(model => model.ConsoleName): @Html.DisplayFor(model => model.ConsoleName)</h3>
+    <h3>@Html.DisplayNameFor(model => model.ReleaseDate): @Html.DisplayFor(model => model.ReleaseDate)</h3>
+    <h3>@Html.DisplayNameFor(model => model.CpuSpeed): @Html.DisplayFor(model => model.CpuSpeed)</h3>
+    <h3>@Html.DisplayNameFor(model => model.MainRam): @Html.DisplayFor(model => model.MainRam)</h3>
+    <h3>@Html.DisplayNameFor(model => model.HasMemoryOption): @Html.DisplayFor(model => model.HasMemoryOption)</h3>
+</div>
+
+@*<dt>  REMOVED BORRING FORMAT AND IMPROVED THE LOOK
             @Html.DisplayNameFor(model => model.Category.CategoryName)
         </dt>
 
@@ -58,8 +65,8 @@
             @Html.DisplayFor(model => model.HasMemoryOption)
         </dd>
 
-    </dl>
-</div>
+    </dl>*@
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")

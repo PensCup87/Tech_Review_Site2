@@ -11,6 +11,7 @@ namespace Tech_Review_Site2.Models
 
         [Key]
         public int CategoryID { get; set; }
+        [Display(Name ="Console Maker")]
         public string CategoryName { get; set; }
         public virtual ICollection<Review> Reviews { get; set; }
 
